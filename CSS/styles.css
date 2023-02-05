@@ -1,0 +1,76 @@
+.body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#main {
+  margin: auto;
+  margin: 0 30%;
+  border: 1px solid red;
+}
+#number {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-gap: 10px;
+}
+#screen {
+  background-color: black;
+  text-align: right;
+  color: gray;
+  height: 120px;
+  border-bottom: 2px solid gray;
+}
+#number {
+  padding: 15px 5px 15px 5px;
+  background-color: black;
+}
+.num1 {
+  margin: 0;
+  color: white;
+  padding: 5px 10px 10px 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.operation {
+  margin: 0;
+  padding: 3px 10px;
+}
+.num2 {
+  color: white;
+  margin: 0;
+  padding: 10px 10px 5px 10px;
+  font-size: 25px;
+}
+.div-btn {
+  display: grid;
+  grid-template-columns: 30% 30% auto;
+  grid-gap: 10px;
+}
+
+.btn {
+  font-size: 20px;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid whitesmoke;
+}
+.btn-num {
+  background-color: aquamarine;
+}
+.btn-op {
+  background-color: darkolivegreen;
+}
+.btn-equal {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: darkolivegreen;
+}
+
+@media screen and (max-width: 800px) {
+  #main {
+    margin: 0 20%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #main {
+    margin: 0 10%;
+  }
+}
